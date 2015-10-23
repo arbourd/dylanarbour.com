@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <title>dylan arbour's cv</title>
+    <meta name="description" content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script>
+      buzzwords = [
+        "full-stack developer",
+        "front-end developer",
+        "ruby developer",
+        "rails developer",
+        "javascript developer",
+        "node.js developer",
+        "infastructure developer",
+        "test-driven developer",
+        "back-end developer",
+        "ruby on rails developer",
+        "devops developer",
+      ]
+
+      var id = 0;
+
+      var init = function() {
+        shuffle(buzzwords);
+        buzz();
+      }
+
+      var shuffle = function(array) {
+        var m = array.length, t, i;
+        while (m) {
+          i = Math.floor(Math.random() * m--);
+          t = array[m];
+          array[m] = array[i];
+          array[i] = t;
+        }
+      }
+
+      var buzz = function() {
+        var grey = "<span style='color: grey;'>",
+            span = '</span>';
+        document.getElementById('tag').innerHTML = grey + buzzwords[id] + span;
+
+        if (id === buzzwords.length - 1) {
+          shuffle(buzzwords);
+          id = 0;
+        } else {
+          id++;
+        }
+      }
+    </script>
+
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+
+  <body onload='init()'>
+    <header>
+      <h1>Dylan</br>Arbour.</h1>
+    </header>
+
+    <main class="wrapper">
+      <section id="buzzwords">
+        <h2>
+          Is a <span class="strike"><a id='tag' href='#!' onclick='buzz();'></a></span> engineer.
+        </h2>
+      </section>
+
+      <section>
+        <h3>Work</h3>
+        <section>
+          <h4>MicroMetrics • Full-Stack Developer </h4><span class="date">2015</span>
+          <p>Ruby on Rails and AngularJS with PostgreSQL, MongoDB, ElasticSearch, Capistrano, Docker, Delayed::Job, Minitest, Jasmine.
+
+          </p>
+          <p>A few key achievements:</p>
+          <ul>
+            <li>Migrated the production application from Rails 3.2 to 4.1 stable (still working on 4.2 stable)</li>
+            <li>Advocated, designed and implemented a major db schema refactor within my first four months of co-op placement</li>
+            <li>Implemented and maintained ELK stack for search and storage of all production logs</li>
+            <li>Brought and implemented a myriad of tools: Github, Mandrill, Datadog, CircleCI, Codecov, ZenHub, Airbrake</li>
+          </ul>
+        </section>
+        <section>
+          <h4>Algonquin College • Tutor</h4><span class="date">2014</span>
+          <p>Peer tutor for Algonquin College, assisting students with Java, C#, ASP.NET and relational modeling with SQL.</p>
+        </section>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <section>
+          <h4>Algonquin College</h4><span class="date">2013 - 2016</span>
+          <p>Internet Applications and Web Development • 3.98 GPA</p>
+          <p>C#, ASP.NET, Java, SQL</p>
+        </section>
+      </section>
+
+      <section id="contact">
+        <h3>Contact</h3>
+        <p>View this cv online at http://dylanarbour.com/cv</p>
+        <p><i class="fa fa-envelope"></i> dylan.arbour@gmail.com</p>
+        <p><i class="fa fa-github"></i> github.com/arbourd</p>
+        <p><i class="fa fa-twitter"></i> twitter.com/dylanarbour</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <ul class="credits">
+          <li><a href="mailto:dylan.arbour@gmail.com"><i class="fa fa-envelope"></a></i></li>
+          <li><a><i class="fa fa-print" onclick="window.print()" style="cursor: pointer"></i></a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://github.com/arbourd" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="http://twitter.com/dylanarbour" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://ca.linkedin.com/pub/dylan-arbour/b1/864/471" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+          <li><a href="https://angel.co/arbourd" target="_blank"><i class="fa fa-angellist"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
