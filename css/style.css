@@ -61,6 +61,10 @@ body {
   width: 100%;
 }
 
+p {
+  margin: 0.8em 0em 0.8em 0em;
+}
+
 header {
   background-color: yellow;
   color: #383838;
@@ -78,6 +82,12 @@ main {
 
 main ul {
   list-style-type: circle;
+  margin: 0.5em 0em 0.5em 0;
+  padding-left: 1.5em;
+}
+
+main li {
+  padding-bottom: 0.25em;
 }
 
 section {
@@ -126,9 +136,21 @@ footer ul a:hover {
   display: none;
 }
 
+#contact ul {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact li {
+  display: inline;
+  margin-right: 0.7em;
+}
+
 .date {
   font-size: 0.7em;
   font-weight: 400;
+  padding-bottom: 50px;
 }
 
 .wrapper {
@@ -299,7 +321,6 @@ footer ul a:hover {
   }
 
   #buzzwords,
-  #whatsnext,
   footer {
     display: none;
   }
