@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <script>
-      buzzwords = [
+      BUZZWORDS = [
         "full-stack developer",
         "front-end developer",
         "ruby developer",
@@ -22,7 +22,6 @@
         "infrastructure developer",
         "test-driven developer",
         "back-end developer",
-        "ruby on rails developer",
         "devops developer",
         "python developer",
         "api developer",
@@ -33,7 +32,7 @@
       var id = 0;
 
       var init = function() {
-        shuffle(buzzwords);
+        shuffle(BUZZWORDS);
         buzz();
       }
 
@@ -50,10 +49,10 @@
       var buzz = function() {
         var grey = "<span style=\"color: grey;\">",
             span = "</span>";
-        document.getElementById("tag").innerHTML = grey + buzzwords[id] + span;
+        document.getElementById("tag").innerHTML = grey + BUZZWORDS[id] + span;
 
-        if (id === buzzwords.length - 1) {
-          shuffle(buzzwords);
+        if (id === BUZZWORDS.length - 1) {
+          shuffle(BUZZWORDS);
           id = 0;
         } else {
           id++;
@@ -87,31 +86,32 @@
       <section>
         <h3>Work</h3>
         <section>
-          <h4>Speedyrails • Software Developer</h4><span class="date">2016 - present</span>
-          <p>Ruby, Go, Microservices, Kubernetes</p>
+          <h4>Speedyrails • DevOps Software Developer</h4><span class="date">2016 - 2017</span>
+          <p>Ruby, Go, Microservices, Kubernetes, MySQL, MongoDB</p>
+          <ul>
+            <li>Designed and implemented multiple Sinatra microservices</li>
+            <li>Architected public and private APIs, their gateways, clients, and authentication/authorization</li>
+            <li>Experimented with Kubernetes, Rancher, Deis and Vault as potential internal solutions</li>
+          </ul>
         </section>
         <section>
           <h4>360pi • Software Developer</h4><span class="date">2015 - 2016</span>
-          <p>Python, MongoDB, RabbitMQ, lxml</p>
+          <p>Python, MongoDB, Ember, Celery, RabbitMQ, lxml, Docker</p>
           <ul>
-            <li>Updated and maintained crawling code for information discovery and extraction</li>
-            <li>Refactored crawling infrastructure, which sees 100,000+ requests a day</li>
+            <li>Updated and maintained Python-based crawling software for data discovery and collection</li>
+            <li>Refactored crawling infrastructure and private APIs, which see 100,000+ requests a day, for efficiency and readability</li>
             <li>Dockerized core applications</li>
           </ul>
         </section>
         <section>
           <h4>MicroMetrics • Full-Stack Developer</h4><span class="date">2015</span>
-          <p>Ruby, Rails, Angular.js</p>
+          <p>Ruby, Rails, Angular.js, PostgreSQL, Docker</p>
           <ul>
-            <li>Brought core app test coverage from 60% to 90%</li>
-            <li>Migrated core app from Ruby 1.9 to 2.1, Rails 3.2 to 4.1</li>
+            <li>Maintained private Rails API and Sinatra microservice, sometimes assisting front-end team with Angular.js</li>
+            <li>Migrated core Rails app to Ruby 2.1 and Rails 4.1; increased test coverage to 90%</li>
             <li>Built and managed ELK cluster that stored production logs</li>
             <li>Introduced team to Docker, Github, CircleCI, Mandrill, Datadog, Codecov</li>
           </ul>
-        </section>
-        <section>
-          <h4>Algonquin College • Tutor</h4><span class="date">2014</span>
-          <p>Peer tutor for Algonquin College, assisting students with Java, C#, ASP.NET and relational modeling.</p>
         </section>
       </section>
 
