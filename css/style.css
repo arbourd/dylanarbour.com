@@ -62,7 +62,7 @@ body {
 }
 
 p {
-  margin: 0.8em 0em 0.8em 0em;
+  margin: 0.8em 0 0.8em 0;
 }
 
 header {
@@ -82,7 +82,7 @@ main {
 
 main ul {
   list-style-type: circle;
-  margin: 0.5em 0em 0.5em 0;
+  margin: 0.5em 0 0.5em 0;
   padding-left: 1.5em;
 }
 
@@ -137,13 +137,13 @@ footer ul a:hover {
 }
 
 #contact ul {
-  display: inline;
+  line-height: 195%;
   list-style-type: none;
   padding: 0;
 }
 
 #contact li {
-  display: inline;
+  display: list-item;
   margin-right: 0.7em;
 }
 
@@ -326,6 +326,7 @@ footer ul a:hover {
   }
 
   #contact {
-    display: block;
+    display: inline-block;
+    position: absolute;
   }
 }
