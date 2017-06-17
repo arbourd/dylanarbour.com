@@ -1,0 +1,146 @@
+/*        */
+/*   CV   */
+/*        */
+
+body {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 300;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0.25em 0 0 0;
+}
+
+p {
+  margin: 0.7em 0 0.6em 0;
+}
+
+main {
+  justify-content: flex-start;
+  margin-top: 2em;
+}
+
+main ul {
+  list-style-type: disc;
+  margin: 0.5em 0 0.5em 0;
+  padding-left: 1.5em;
+}
+
+main li {
+  padding-bottom: 0.25em;
+}
+
+section {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+footer {
+  width: 100%;
+}
+
+/* Classes */
+
+.date {
+  background-color: yellow;
+  font-size: 0.7em;
+  font-weight: 300;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+
+.amp {
+  font-size: 0.8em;
+  font-weight: 300;
+  vertical-align: middle;
+}
+
+.desc-box {
+  background-color: #eeeeee;
+  border-radius: 0.25em;
+  font-size: 0.3em;
+  margin-left: 0.5em;
+  padding: 0.5em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.credits {
+  font-size: 1.08em;
+}
+
+.credits li {
+  margin-right: 1.2em;
+}
+
+.social {
+  float: right;
+  font-size: 1.2em;
+}
+
+.social li {
+  margin-left: 1.2em;
+}
+
+/* IDs */
+
+#tag {
+  color: yellow;
+  text-decoration: line-through;
+}
+
+#buzzwords {
+  color: #6f6f6f;
+  font-size: 1.2em;
+  font-weight: 100;
+  margin: 0 0 2em 0;
+}
+
+#print-contact {
+  display: none;
+}
+
+#print-contact ul {
+  line-height: 195%;
+  list-style-type: none;
+  padding: 0;
+}
+
+#print-contact li {
+  display: list-item;
+  margin-right: 0.7em;
+}
+
+
+@media print {
+  body {
+    font-size: 11px;
+  }
+
+  header {
+    margin-left: 10em;
+    margin-top: 3em;
+  }
+
+  .wrapper {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #buzzwords,
+  footer {
+    display: none;
+  }
+
+  #print-contact {
+    display: inline-block;
+    position: absolute;
+  }
+}

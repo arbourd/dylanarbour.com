@@ -1,0 +1,32 @@
+/*           */
+/*   index   */
+/*           */
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+  align-items: center;
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  width: 1000%;
+}
+
+footer {
+  background-color: #fff;
+  align-items: center;
+}
+
+.social li {
+  padding-left: 1em;
+  padding-right: 1em;
+}

@@ -1,2 +1,2 @@
-# cv
-dylan arbour's cv
+# dylanarbour.com
+dylan arbour's homepage

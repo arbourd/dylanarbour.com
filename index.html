@@ -1,109 +1,42 @@
 <!doctype html>
-<html>
+
+<html style="overflow: hidden;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>dylan arbour's cv</title>
+    <title>dylanarbour.com</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/buzz.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
       ga('create', 'UA-89147997-1', 'auto');
       ga('send', 'pageview');
     </script>
   </head>
 
-  <body onload="init()">
-    <header>
-      <h1>Dylan</br>Arbour.</h1>
-      <section id="print-contact">
-        <ul>
-          <li><i class="fa fa-link"></i> https://dylanarbour.com/cv</li>
-          <li><i class="fa fa-envelope"></i> dylan.arbour@gmail.com</li>
-          <li><i class="fa fa-github"></i> https://github.com/arbourd</li>
-          <li><i class="fa fa-twitter"></i> https://twitter.com/dylanarbour</li>
-        </ul>
-      </section>
-    </header>
-
-    <main class="wrapper">
-      <section id="buzzwords">
-        Is a <span class="strike"><a id="tag" href="#!" onclick="buzz();"></a></span> software developer.
-      </section>
-
-      <section>
-        <section>
-          <h2>Lighthouse Labs</h2>
-          <h3>Mentor <span class="date">2017 &#8212; present</span></h3>
-          <p>Teaching, mentoring and code-reviewing a Ruby, Sinatra, HTML, and CSS class</p>
-        </section>
-        <section>
-          <h2>Ladies Learning Code <span class="desc-box">volunteer</span></h2>
-          <h3>Mentor <span class="date">2016 &#8212; present</span></h3>
-          <p>Mentoring and code-reviewing Ruby, Python, HTML and CSS workshops</p>
-        </section>
-        <section>
-          <h2>Speedyrails</h2>
-          <h3>DevOps Software Developer <span class="date">2016 &#8212; 2017</span></h3>
-          <p>Ruby, Go, Microservices, Kubernetes, MySQL, MongoDB</p>
-          <ul>
-            <li>Designed and implemented multiple Sinatra microservices</li>
-            <li>Architected public and private APIs, their gateways, clients, and authentication/authorization</li>
-            <li>Experimented with Kubernetes, Rancher, Deis and Vault as potential internal solutions</li>
-          </ul>
-        </section>
-        <section>
-          <h2>360pi</h2>
-          <h3>Software Developer <span class="date">2015 &#8212; 2016</span></h3>
-          <p>Python, MongoDB, Ember, Celery, RabbitMQ, lxml, Docker</p>
-          <ul>
-            <li>Updated and maintained Python-based crawling software for data discovery and collection</li>
-            <li>Refactored crawling infrastructure and private APIs, which see 100,000+ requests a day, for efficiency and readability</li>
-            <li>Dockerized core applications</li>
-          </ul>
-        </section>
-        <section>
-          <h2>MicroMetrics</h2>
-          <h3>Full-Stack Developer <span class="date">2015</span></h3>
-          <p>Ruby, Rails, Angular.js, PostgreSQL, Docker</p>
-          <ul>
-            <li>Maintained private Rails API and Sinatra microservice, sometimes assisting front-end team with Angular.js</li>
-            <li>Migrated core Rails app to Ruby 2.1 and Rails 4.1; increased test coverage to 90%</li>
-            <li>Introduced team to Docker, Github, ElasticSearch, Kibana, CircleCI, Mandrill, Datadog, Codecov</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Carleton University <span class="desc-box">education</span></h2>
-          <h3>Special Student, School of Computer Science <span class="date">2009 &#8212; 2011</span> <span class="amp">&amp;</span><span class="date">2017 &#8212; present</span></h3>
-        </section>
-        <section>
-          <h2>Algonquin College <span class="desc-box">education</span></h2>
-          <h3>Advanced Diploma, Internet Applications and Web Development, 3.88 GPA <span class="date">2013 &#8212; 2016</span></h3>
-        </section>
-      </section>
+  <body>
+    <main>
+      <header>
+        <h1>Dylan</br>Arbour.</h1>
+      </header>
     </main>
-
     <footer>
-      <div class="wrapper">
-        <ul class="credits">
-          <li><a href="mailto:dylan.arbour@gmail.com"><i class="fa fa-envelope"></a></i></li>
-          <li><a><i class="fa fa-print" onclick="window.print()" style="cursor: pointer"></i></a></li>
-        </ul>
-        <ul class="social">
-          <li><a href="https://github.com/arbourd" target="_blank"><i class="fa fa-github"></i></a></li>
-          <li><a href="http://twitter.com/dylanarbour" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://angel.co/arbourd" target="_blank"><i class="fa fa-angellist"></i></a></li>
-        </ul>
-      </div>
+      <ul class="social" style="float: none;">
+        <li><a href="https://github.com/arbourd" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/dylanarbour" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://angel.co/arbourd" target="_blank"><i class="fa fa-angellist"></i></a></li>
+      </ul>
     </footer>
   </body>
 </html>
