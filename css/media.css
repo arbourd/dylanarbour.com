@@ -134,3 +134,30 @@
     margin-right: 12em;
   }
 }
+
+@media print {
+  body {
+    font-size: 11px;
+    -webkit-print-color-adjust: exact;
+  }
+
+  header {
+    margin-left: 10em;
+    margin-top: 3em;
+  }
+
+  .wrapper {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  #buzzwords,
+  footer {
+    display: none;
+  }
+
+  #print-contact {
+    display: inline-block;
+    position: absolute;
+  }
+}

@@ -49,7 +49,7 @@ footer {
 /* Classes */
 
 .date {
-  background-color: yellow;
+  background-color: #ffff00;
   font-size: 0.7em;
   font-weight: 300;
   margin-left: 0.5em;
@@ -92,7 +92,7 @@ footer {
 /* IDs */
 
 #tag {
-  color: yellow;
+  color: #ffff00;
   text-decoration: line-through;
 }
 
@@ -116,31 +116,4 @@ footer {
 #print-contact li {
   display: list-item;
   margin-right: 0.7em;
-}
-
-
-@media print {
-  body {
-    font-size: 11px;
-  }
-
-  header {
-    margin-left: 10em;
-    margin-top: 3em;
-  }
-
-  .wrapper {
-    margin-left: 5em;
-    margin-right: 5em;
-  }
-
-  #buzzwords,
-  footer {
-    display: none;
-  }
-
-  #print-contact {
-    display: inline-block;
-    position: absolute;
-  }
 }
