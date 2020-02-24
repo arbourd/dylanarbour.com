@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../favicon.ico" rel="icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/376b15dd6b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/cv.css">
     <link rel="stylesheet" href="../css/media.css">
-    <script src="../js/cv.js"></script>
+    <!-- <script src="../js/cv.js"></script> -->
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -31,27 +31,33 @@
       <div id="print-contact">
         <ul>
           <li><i class="fas fa-link"></i> https://dylanarbour.com/cv</li>
-          <li><i class="fas fa-envelope"></i> dylan.arbour@gmail.com</li>
+          <li><i class="fas fa-envelope-open"></i> dylan.arbour@gmail.com</li>
           <li><i class="fab fa-github"></i> https://github.com/arbourd</li>
+          <li><i class="fab fa-linkedin-in"></i> https://www.linkedin.com/in/dylan-arbour-b95a97188/</li>
         </ul>
       </div>
     </header>
 
     <main class="wrapper">
-      <section id="buzzwords">
+      <!-- <section id="buzzwords">
         Is a <span class="strike"><a id="tag" href="#!" onclick="buzz();"></a></span> software developer.
-      </section>
-
+      </section> -->
       <section>
         <section>
           <h2>Qlik</h2>
           <h3>Software Developer <span class="date">2017 &#8212; present</span></h3>
-          <p>Go, Kubernetes, Microservices, Azure, AWS</p>
+          <ul>
+            <li>Led the introduction of Kubernetes to the company</li>
+            <li>Designed and built the CI/CD pipeline from commit to production (Concourse, Circle CI, Travis CI)</li>
+            <li>Automation and design of infrastructure for multi-cloud (AWS, Azure, GCP)</li>
+            <li>Contributed to service design in support of Cloud Native best practises</li>
+            <li>Developed microservices with Go</li>
+          </ul>
         </section>
         <section>
-          <h2>Lighthouse Labs</h2>
-          <h3>Instructor <span class="date">2017 &#8212; present</span></h3>
-          <p>Teaching, mentoring and code-reviewing a Ruby, Sinatra, HTML, and CSS class</p>
+          <h2>GoCon Canada <span class="desc-box">volunteer</span></h2>
+          <h3>Director <span class="date">2016 &#8212; present</span></h3>
+          <p>One of many organizers of Canada's first Go conference!</p>
         </section>
         <section>
           <h2>Ladies Learning Code <span class="desc-box">volunteer</span></h2>
@@ -59,56 +65,60 @@
           <p>Mentoring and code-reviewing Ruby, Python, HTML and CSS workshops</p>
         </section>
         <section>
+          <h2>Lighthouse Labs</h2>
+          <h3>Instructor <span class="date">2017 &#8212; 2018</span></h3>
+          <p>Teaching, mentoring and code-reviewing a Ruby, Sinatra, HTML, and CSS class</p>
+        </section>
+        <section>
           <h2>Speedyrails</h2>
           <h3>DevOps Software Developer <span class="date">2016 &#8212; 2017</span></h3>
-          <p>Ruby, Go, Microservices, Kubernetes, MySQL, MongoDB</p>
           <ul>
-            <li>Designed and implemented multiple Sinatra microservices</li>
-            <li>Architected public and private APIs, their gateways, clients, and authentication/authorization</li>
-            <li>Experimented with Kubernetes, Rancher, Deis and Vault as potential internal solutions</li>
+            <li>Developed microservices, tooling and client libraries in Ruby</li>
+            <li>Designed the public RESTful API</li>
+            <li>Prototyped Kubernetes deployments</li>
+            <li>Built CI/CD pipelines</li>
           </ul>
         </section>
         <section>
           <h2>360pi</h2>
           <h3>Software Developer <span class="date">2015 &#8212; 2016</span></h3>
-          <p>Python, MongoDB, Ember, Celery, RabbitMQ, lxml, Docker, AWS</p>
           <ul>
-            <li>Updated and maintained Python-based crawling software for data discovery and collection</li>
-            <li>Refactored crawling infrastructure and private APIs, which see 100,000+ requests a day, for efficiency and readability</li>
+            <li>Developed web crawlers with Python</li>
+            <li>Refactored crawling infrastructure and private APIs, which see 100,000+ requests a day</li>
             <li>Dockerized core applications</li>
           </ul>
         </section>
         <section>
           <h2>MicroMetrics</h2>
           <h3>Full-Stack Developer <span class="date">2015</span></h3>
-          <p>Ruby, Rails, Angular.js, PostgreSQL, Docker</p>
           <ul>
-            <li>Designed and maintained Rails-based APIs, sometimes assisting front-end team with Angular.js</li>
-            <li>Migrated core Rails app to Ruby 2.1 and Rails 4.1; increased test coverage to 90%</li>
-            <li>Introduced team to Docker, Github, ElasticSearch, Kibana, CircleCI, Mandrill, Datadog, Codecov</li>
+            <li>Developed APIs written with Ruby (Rails and Sinatra)</li>
+            <li>Added observability to production with Elastic stack, New Relic and Airbrake</li>
+            <li>Implemented CI pipeline</li>
           </ul>
         </section>
-        <section>
+        <!-- Education stuff is better detailed on LinkedIn -->
+        <!-- <section>
           <h2>Algonquin College <span class="desc-box">education</span></h2>
           <h3>Advanced Diploma, Internet Applications and Web Development, 3.88 GPA <span class="date">2013 &#8212; 2016</span></h3>
         </section>
         <section>
           <h2>Carleton University <span class="desc-box">education</span></h2>
           <h3>Special Student, School of Computer Science <span class="date">2009 &#8212; 2011</span></h3>
-        </section>
+        </section> -->
       </section>
     </main>
 
     <footer>
       <div class="wrapper">
         <ul class="credits">
-          <li><a href="mailto:dylan.arbour@gmail.com"><i class="fas fa-envelope"></a></i></li>
+          <li><a href="mailto:dylan.arbour@gmail.com"><i class="fas fa-envelope-open"></a></i></li>
           <li><a><i class="fa fa-print" onclick="window.print()" style="cursor: pointer"></i></a></li>
         </ul>
         <ul class="social">
           <li><a href="https://github.com/arbourd" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a href="http://medium.com/@arbourd" target="_blank"><i class="fab fa-medium"></i></a></li>
-          <li><a href="https://angel.co/arbourd" target="_blank"><i class="fab fa-angellist"></i></a></li>
+          <li><a href="https://medium.com/@arbourd" target="_blank"><i class="fab fa-medium"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/dylan-arbour-b95a97188/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         </ul>
       </div>
     </footer>
